@@ -45,7 +45,7 @@ def get_hero_byID(id):
                     }),
                 404
         )
-        return response
+        return response   
     else:
 
         hero_dict =hero.to_dict()
@@ -83,7 +83,7 @@ def get_power_byID(id):
                     }),
                 404
         )
-        return response
+        return response   
     else:
 
         power_dict =power.to_dict()
@@ -118,7 +118,7 @@ class HeroPower(Resource): #handle post using flask restful
     return response
 
 api.add_resource(HeroPower, '/hero_powers')
-
+ 
 
 
 
